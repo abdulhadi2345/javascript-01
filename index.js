@@ -1,19 +1,19 @@
 
   // Fixed prices
-  const priceLaptop = 5000;
-  const priceSmartphone = 3000;
-  const priceHeadphones = 1000;
+  var priceLaptop = 5000;
+  var priceSmartphone = 3000;
+  var priceHeadphones = 1000;
 
   // Get user input for quantities
-  const qtyLaptop = parseInt(prompt("Enter quantity of Laptops: prices=5000"));
-  const qtySmartphone = parseInt(prompt("Enter quantity of Smartphones: prices=3000"));
-  const qtyHeadphones = parseInt(prompt("Enter quantity of Headphones: prices=1000"));
+  var qtyLaptop = parseInt(prompt("Enter quantity of Laptops: prices=5000"));
+  var qtySmartphone = parseInt(prompt("Enter quantity of Smartphones: prices=3000"));
+  var qtyHeadphones = parseInt(prompt("Enter quantity of Headphones: prices=1000"));
 
   // Calculate total
-  const totalBill = (qtyLaptop * priceLaptop) + (qtySmartphone * priceSmartphone) + (qtyHeadphones * priceHeadphones);
+  var totalBill = (qtyLaptop * priceLaptop) + (qtySmartphone * priceSmartphone) + (qtyHeadphones * priceHeadphones);
 
   // Calculate discount
-  let discount = 0;
+  var discount = 0;
   if (totalBill > 5000) {
     discount = totalBill * 0.20;
   } else if (totalBill > 3000) {
@@ -23,7 +23,7 @@
   }
 
   // Final amount
-  const finalAmount = totalBill - discount;
+  var finalAmount = totalBill - discount;
 
   // Display results
   document.write(`<h2>Shopping Bill Summary</h2>`);
